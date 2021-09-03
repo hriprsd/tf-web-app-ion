@@ -1,5 +1,5 @@
 variable "region" {
-  default = "us-east-2"
+  default = "ap-south-1"
 }
 variable "vpc-fullcidr" {
   default     = "192.168.0.0/16"
@@ -30,7 +30,7 @@ variable "Subnet-Private-AzC-CIDR" {
   description = "the cidr of the 2C-Private Subnet"
 }
 variable "key_name" {
-  default     = "KeyPair-Ohio"
+  default     = "deltakp"
   description = "the ssh key to use in the EC2 machines"
 }
 variable "route53_public_dns_name" {
