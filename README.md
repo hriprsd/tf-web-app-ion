@@ -1,2 +1,2 @@
 # tf-web-app-ion
-This repo holds terraform code for creating AWS infrastructure
+Repo holds terraform code used for running Terraform job for Alpha DevOps project
