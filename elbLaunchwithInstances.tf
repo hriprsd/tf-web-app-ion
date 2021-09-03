@@ -15,7 +15,7 @@ resource "aws_elb" "bar" {
     target              = "HTTP:8080/"
     interval            = 30
   }
-  instances                    = [aws_instance.webapp1.id,aws_instance.webapp2.id,aws_instance.webapp3.id]
+  instances                   = [aws_instance.webapp1.id,aws_instance.webapp2.id,aws_instance.webapp3.id]
   cross_zone_load_balancing   = true
   idle_timeout                = 400
   connection_draining         = true

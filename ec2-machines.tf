@@ -6,7 +6,7 @@ resource "aws_instance" "webapp1" {
   vpc_security_group_ids      = [aws_security_group.WebServer.id]
   key_name                    = var.key_name
   tags = {
-    Name = "ion-WebApp2"
+    Name = "ion-WebApp1"
   }
   user_data = file("app-userdata.sh")
 }
@@ -22,7 +22,6 @@ resource "aws_instance" "webapp2" {
   }
   user_data = file("app-userdata.sh")
 }
-
 resource "aws_instance" "webapp3" {
   ami                         = var.ami
   instance_type               = "t2.micro"
